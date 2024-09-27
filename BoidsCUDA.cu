@@ -74,6 +74,7 @@ int main()
 	std::uniform_int_distribution<> dist_pos{ 0, 20 };
 	std::uniform_int_distribution<> dist_head{ -1, 1 };
 
+	std::cout << "Running Boids simulation (CUDA) with " << N << " Boids." << std::endl;
 
 	// Allocate memory for boids arrays on the host and the device
 	//Boid* boids = new Boid[N];
