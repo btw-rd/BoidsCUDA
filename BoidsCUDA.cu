@@ -19,7 +19,7 @@ struct Boid {
 	glm::vec3 heading{};
 };
 
-__constant__ constexpr int N = 1 << 15;
+__constant__ constexpr int N = 1 << 13;
 
 __global__
 void update(const Boid* boids, Boid* new_boids)
